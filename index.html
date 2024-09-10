@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <header>
+  <header class="flex-container">
     <img src="assets/images/logo.svg" alt="Logo">
     <img src="assets/images/icon-menu.svg" alt="Menu icon">
     <nav>
@@ -28,8 +28,9 @@
       </ul>
     </nav>
   </header>
-  <main>
-    <article>
+  <main class="grid-container">
+
+    <article class="flex-container flex-column">
       <picture>
         <source media="(max-width:668px)" srcset="./assets/images/image-web-3-mobile.jpg">
         <source media="(min-width: 669px)" srcset="./assets/images/image-web-3-desktop.jpg">
@@ -43,36 +44,64 @@
       </p>
       <button>Read more</button>
     </article>
+
     <aside>
       <h2>New</h2>
       <article>
+
         <h3>Hydrogen VS Electric Cars</h3>
         <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+
       </article>
       <article>
+
         <h3>The Downsides of AI Artistry</h3>
         <p>What are the possible adverse effects of on-demand AI image generation?</p>
+
       </article>
       <article>
+
         <h3>Is VC Funding Drying Up?</h3>
         <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+
       </article>
     </aside>
-    <section>
-      <article>
-        <h2>01</h2>
-        <h3>Reviving Retro PCs</h3>
-        <p>What happens when old PCs are given modern upgrades?</p>
+    <section class="grid-container">
+      <article class="flex-container">
+
+        <div class="article-image-container">
+          <img src="assets/images/image-retro-pcs.jpg" alt="An old pc">
+        </div>
+        <div class="article-info-container flex-container flex-column">
+          <h2>01</h2>
+          <h3>Reviving Retro PCs</h3>
+          <p>What happens when old PCs are given modern upgrades?</p>
+        </div>
+
       </article>
-      <article>
-        <h2>02</h2>
-        <h3>Top 10 Laptops of 2022</h3>
-        <p>Our best picks for various needs and budgets.</p>
+      <article class="flex-container">
+
+        <div class="article-image-container">
+          <img src="assets/images/image-top-laptops.jpg" alt="Illustration of a keyboard">
+        </div>
+        <div class="article-info-container flex-container flex-column">
+          <h2>02</h2>
+          <h3>Top 10 Laptops of 2022</h3>
+          <p>Our best picks for various needs and budgets.</p>
+        </div>
+
       </article>
-      <article>
-        <h2>03</h2>
-        <h3>The Growth of Gaming</h3>
-        <p>How the pandemic has sparked fresh opportunities.</p>
+      <article class="flex-container">
+
+        <div class="article-image-container">
+          <img src="assets/images/image-gaming-growth.jpg" alt="A hand holding a floating game controller">
+        </div>
+        <div class="article-info-container flex-container flex-column">
+          <h2>03</h2>
+          <h3>The Growth of Gaming</h3>
+          <p>How the pandemic has sparked fresh opportunities.</p>
+        </div>
+        
       </article>
     </section>
   </main>

@@ -95,8 +95,11 @@ main > article:first-of-type p {
 }
 
 picture img, .article-image-container img {
-    max-width: 100%;
+    width: 100%;
+    height: 100%;
 }
+
+
 
 h1 {
     font-size: 46px;
@@ -148,20 +151,29 @@ aside p {
     color: var(--grayish-blue);
 }
 
+section {
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
 .article-image-container {
     width: 30%;
+    max-width: 150px;
+}
+
+.article-image-container img {
+    object-fit: cover;
 }
 
 .article-info-container {
     width: 70%;
     margin-left: 1rem;
-    justify-content: flex-start;
-    gap: 0.5rem;
+    gap: 0.8rem;
 }
 
 .article-info-container h2 {
     color: var(--grayish-blue);
-    font-size: 8vw;
+    font-size: 7vw;
 }
 
 .article-info-container h3 {
@@ -170,4 +182,29 @@ aside p {
 
 .article-info-container p {
     font-size: 4vw;
+}
+
+@media screen and (min-width:481px){
+
+    .article-info-container {
+        justify-content: center;
+        gap: 1rem;
+    }
+    .article-info-container h2 {
+        font-size: 26px;
+    }
+
+    .article-info-container h3 {
+        font-size: 20px;
+    }
+
+    .article-info-container p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 769px){
+    .article-image-container {
+        max-width: 100px;
+    }
 }

@@ -32,6 +32,17 @@ body {
     padding: 1rem;
 }
 
+.mobile-menu-faded-background{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    background-color: hsl(240, 50%, 0%);
+    opacity: 0.5;
+    display: none;
+}
+
 header {
     justify-content: space-between;
     align-items: center;
@@ -42,8 +53,36 @@ img[alt="Logo"], img[alt="Menu icon"] {
     width: 13vw;
 }
 
+img[alt*="Close"] {
+    width: 9vw;
+    display: none;
+    z-index: 10;
+    position: fixed;
+    left: 85%;
+
+}
+
 nav {
     display: none;
+    z-index: 5;
+    position: fixed;
+    top: 0%;
+    left: 30%;
+    height: 100vh;
+    width: 70vw;
+    background-color: var(--off-white);
+
+}
+
+ul {
+    list-style-type: none;
+    position: relative;
+    top: 23%;
+    gap: 1rem;
+    color: var(--very-dark-blue);
+    font-weight:400;
+    font-size: 18px;
+    padding-left: 1rem;
 }
 
 main > article:first-of-type {

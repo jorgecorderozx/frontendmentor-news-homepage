@@ -30,6 +30,7 @@ body {
     font-size: 15px;
     font-family: Inter, "sans serif";
     padding: 1rem;
+    min-height: 100vh;
 }
 
 .mobile-menu-faded-background{
@@ -130,6 +131,7 @@ button {
     letter-spacing: 5px;
     padding: 1rem 1.8rem;
     margin-top: 1rem;
+    width: 200px;
 }
 
 button, aside h3 {
@@ -243,6 +245,10 @@ section {
 
 @media screen and (min-width:1025px){
 
+    header {
+        position: static;
+    }
+
     img[alt="Logo"]{
         width: 6vw;
     }
@@ -257,10 +263,31 @@ section {
         grid-row-end: 2;
         grid-column-start: 1;
         grid-column-end: 3;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 2rem;
+        position: relative;
     }
 
     .main-article picture {
+        grid-column: 1 / span 2;
         margin: 0;
+    }
+
+    h1 {
+        font-size: 56px;
+        padding-left: 0.5rem;
+        line-height: 1;
+    }
+
+    .main-article p {
+        padding-top: 0.2rem;
+    }
+
+    button {
+        margin: 0;
+        grid-column: -2 / span 1;
+        position: absolute;
+        top: 91.5%;
     }
 
     aside {
@@ -308,9 +335,34 @@ section {
     .article-info-container p {
         font-size: 1.5vw;
     }
-    
- 
+}
 
+@media screen and (min-width: 1200px) {
+    body {
+        align-items: center;
+        justify-content: center;
+    }
+    main {
+        max-width: 1200px;
+    }
 
+    header {
+        width: 1200px;
+    }
 
+    img[alt="Logo"]{
+        width: 3.5vw;
+    }
+
+    .article-info-container h2 {
+        font-size: 27px;
+    }
+
+    .article-info-container h3 {
+        font-size: 21px;
+    }
+
+    .article-info-container p {
+        font-size: 17px;
+    }
 }

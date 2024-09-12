@@ -50,6 +50,10 @@ header {
     top: 0%;
     background-color: var(--off-white);
     padding: 1rem 0;
+    position: sticky;
+    top: 0%;
+    background-color: var(--off-white);
+    padding: 1rem 0;
 }
 
 img[alt="Logo"], img[alt="Menu icon"] {
@@ -135,6 +139,7 @@ button, aside h3 {
 aside {
     background-color: var(--very-dark-blue);
     padding: 1rem;
+    justify-content: center;
 }
 
 aside article {
@@ -258,6 +263,19 @@ section {
         margin: 0;
     }
 
+    aside {
+        justify-content: flex-start;
+        gap: 1.5rem;
+    }
+
+    aside h2 {
+        font-size: 30px;
+    }
+
+    aside article {
+        padding-bottom: 2.5rem;
+    }
+
     section {
        grid-row-start: 2;
        grid-row-end:3;
@@ -266,27 +284,32 @@ section {
        grid-template-columns: repeat(3,1fr);
     }
 
-    .article-info-container {
-        gap: 0.3rem;
-    }
-    
-    .article-info-container h2 {
-
-        font-size: 23px;
-    
-    }
-
-    .article-info-container h3 {
-        font-size: 17px;
-    }
-
-    .article-info-container p {
-        font-size: 13px;
+    .article-image-container{
+        width: 100px;
     }
 
     .article-image-container img {
-        object-fit: contain;
+        object-fit: cover;
     }
+
+    .article-info-container {
+        justify-content: flex-start;
+        gap: 0.5rem;
+    }
+
+    .article-info-container h2 {
+        font-size: 2.3vw;
+    }
+
+    .article-info-container h3 {
+        font-size: 1.8vw;
+    }
+
+    .article-info-container p {
+        font-size: 1.5vw;
+    }
+    
+ 
 
 
 

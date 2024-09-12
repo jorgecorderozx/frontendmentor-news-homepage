@@ -93,6 +93,15 @@ ul {
     padding-left: 1rem;
 }
 
+
+li:hover, button:hover, aside h3:hover, .article-info-container h3:hover{
+    cursor: pointer;
+}
+
+li:hover, .article-info-container h3:hover {
+    color: var(--soft-red);
+}
+
 .main-article {
     align-items: flex-start;
     gap: 1.3rem;
@@ -134,6 +143,11 @@ button {
     width: 200px;
 }
 
+button:hover {
+    background-color: var(--very-dark-blue);
+    color: var(--off-white);
+}
+
 button, aside h3 {
     color: var(--off-white);
 }
@@ -142,6 +156,10 @@ aside {
     background-color: var(--very-dark-blue);
     padding: 1rem;
     justify-content: center;
+}
+
+aside h3:hover {
+    color: var(--soft-orange);
 }
 
 aside article {
@@ -287,7 +305,7 @@ section {
         margin: 0;
         grid-column: -2 / span 1;
         position: absolute;
-        top: 91.5%;
+        top: 90%;
     }
 
     aside {

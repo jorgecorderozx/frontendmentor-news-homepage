@@ -360,6 +360,17 @@ section {
         align-items: center;
         justify-content: center;
     }
+
+    ul {
+        gap: 2.5rem;
+        padding: 2rem 0;
+    }
+
+    li {
+        color: var(--dark-grayish-blue);
+        font-size: 18px;
+    }
+
     main {
         max-width: 1200px;
     }
